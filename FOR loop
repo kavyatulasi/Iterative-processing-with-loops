@@ -1,0 +1,29 @@
+FOR : A FOR LOOP is a repetition control structure that allows you to efficiently write a loop 
+     that needs to execute a specific number of times.
+
+--------examples using for loop ---------
+
+--use of for loop
+set serveroutput on;
+begin
+    for a in 1..10 loop
+    dbms_output.put_line('a is '||a);
+    end loop;
+end;
+--multiplicstion table
+set serveroutput on;
+declare
+    a number(3):=5;
+BEGIN
+    for i in 1..10 loop
+        dbms_output.put_line(a ||' * '||i||' = '||a*i);
+    end loop;
+END;
+
+--reverse
+set serveroutput on;
+begin
+    for a in reverse 1..10 loop
+    dbms_output.put_line('a is '||a);
+    end loop;
+end;
