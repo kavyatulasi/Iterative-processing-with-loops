@@ -1,0 +1,12 @@
+while : A WHILE LOOP statement in PL/SQL programming language repeatedly executes a target statement as long as a given condition is true.
+--while--
+
+set serveroutput on;
+declare 
+a number(5):=1;
+begin
+    while a<10 loop
+    dbms_output.put_line('a is '||a);
+    a:=a+1;
+    end loop;
+end;
