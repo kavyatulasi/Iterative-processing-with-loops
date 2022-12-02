@@ -1,0 +1,11 @@
+continue : The CONTINUE statement causes the loop to skip the remainder of its body and immediately retest its condition prior to reiterating.
+--using continue--
+
+set serveroutput on;
+begin
+    for i in 1..10 loop
+        continue
+        when mod(i,2)=1;
+        dbms_output.put_line(i);
+    end loop;
+end;
